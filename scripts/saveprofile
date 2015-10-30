@@ -1,0 +1,2 @@
+mv emonx.txt ${1}-p${2}.emon.txt
+mv ${1}-p${2}.emon.txt profiles

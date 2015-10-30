@@ -1,0 +1,1 @@
+./dumppt -d /dev/block/mmcblk1 -mem mem_ranges.txt -wmi

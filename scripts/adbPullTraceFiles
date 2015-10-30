@@ -1,0 +1,10 @@
+echo Copying tracefiles for $1 from tablet to pipeline incoming tmp directory...
+adb pull /data/$1.wmi.gz /mnt/qt-nfs1/incoming/qt/tmp/
+adb pull /data/$1.arch.xml.gz /mnt/qt-nfs1/incoming/qt/tmp/
+adb pull /data/$1.cpi.txt  /mnt/qt-nfs1/incoming/qt/tmp/
+
+echo Moving tracefiles for $1 from pipeline tmp to pipeline incoming
+mv /mnt/qt-nfs1/incoming/quicktrace/tmp/$1.wmi.gz /mnt/qt-nfs1/incoming/qt/
+mv /mnt/qt-nfs1/incoming/quicktrace/tmp/$1.arch.xml.gz /mnt/qt-nfs1/incoming/qt/
+mv /mnt/qt-nfs1/incoming/quicktrace/tmp/$1.cpi.txt /mnt/qt-nfs1/incoming/qt/
+ 

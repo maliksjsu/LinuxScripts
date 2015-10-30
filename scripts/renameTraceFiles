@@ -1,0 +1,4 @@
+echo "Executing mv command to change the names of trace files to reflect tracename"
+mv emonx.txt ${1}.arch.xml
+mv emonx_cpi.txt ${1}.cpi.txt
+mv out.wmi ${1}.wmi

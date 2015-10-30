@@ -1,0 +1,41 @@
+To read Android Manifest from a given apk file
+aapt dump xmltree SomeApp.apk AndroidManifest.xml  > SomeAppManifest
+
+===============================================================
+To start Browser (Default page):
+adb shell am start -n com.google.android.browser/com.android.browser.BrowserActivity
+
+To start Browser and Launch Sunspider
+adb shell am start -a android.intent.action.VIEW -t text/html -n com.google.android.browser/com.android.browser.BrowserActivity -d file:///data/SunSpider0.91-offline/driver.html
+
+To kill Browser
+adb shell kill `adb shell ps | grep browser | awk '{print $2}'`
+
+===============================================================
+To start CaffeineMark
+adb shell am start -n com.flexycore.caffeinemark/.Application
+
+To kill CaffeineMark
+adb shell kill `adb shell ps | grep caffeinemark | awk '{print $2}'`
+
+===============================================================
+To start LinpackPro
+adb shell am start -n com.greenecomputing.linpackpro/.Linpack
+
+To kill LinpackPro
+adb shell kill `adb shell ps | grep linpackpro | awk '{print $2}'`
+
+===============================================================
+To start Quadrant
+adb shell am start -n com.aurorasoftworks.quadrant.ui.professional/.QuadrantProfessionalLauncherActivity
+
+To kill Quadrant
+adb shell kill `adb shell ps | grep quadrant | awk '{print $2}'`
+
+===============================================================
+To start Smartbench
+adb shell am start -n com.smartbench.twelve/.Smartbench2012
+
+To kill Smartbench
+adb shell kill `adb shell ps | grep smartbench | awk '{print $2}'`
+
